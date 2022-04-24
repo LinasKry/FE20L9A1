@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+section {
+  max-width: 900px;
+  aspect-ratio: auto 1/1;
+  background-color: white;
+  margin: auto;
+}
+section {
+  display: grid;
+  width: 100%;
+  min-height: 100%;
+  max-height: 900px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(3, 32%);
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  margin-top: 50px;
+}
+section div {
+  background: blue;
+  /*border: 3px solid red;*/
+}
+.Box1 {
+  grid-column: span 2;
+}
+.Box3 {
+  grid-row: span 2;
+}
+.Box2 {
+  grid-row: span 2;
+}
+.Box5 {
+  grid-column: span 2;
+}
